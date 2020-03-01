@@ -1,0 +1,10 @@
+<div class="card-container">
+  <div class="card-container__card"
+    *ngFor="let card of cards; index as i"
+    (click)="showDetails(i)"
+    [ngClass]="{'card-container__card--active': activeCard === card}">
+    <div class="card-container__card__real-name">{{card.realName}}</div>
+    <div class="card-container__card__player-name">{{card.playerName}}</div>
+    <div class="card-container__card__asset">{{card.asset}}</div>
+  </div>
+</div>

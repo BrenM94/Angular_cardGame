@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <app-details [card]="activeCard"></app-details>
+    </div>
+    <div class="col-4">
+      <app-controls (buttonClicked)="onControlButtonClicked($event)"></app-controls>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h2 class="overview-headline">{{overviewTitle}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <app-overview [cards]="cards" (selectCard)="activeIndexChanged($event)"></app-overview>
+    </div>
+  </div>
+</div>

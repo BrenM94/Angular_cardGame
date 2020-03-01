@@ -1,0 +1,14 @@
+<div class="controls-container">
+  <h2 class="controls-container__headline">
+    {{title}}
+  </h2>
+  <button class="controls-container__button" (click)="controlButtonClicked('ASC')">
+    Sort Asc
+  </button>
+  <button class="controls-container__button controls-container__button--no-margin" (click)="controlButtonClicked('DESC')">
+    Sort Desc
+  </button>
+  <button class="controls-container__button controls-container__button--full-width" (click)="controlButtonClicked('SUBMIT')">
+    Submit
+  </button>
+</div>

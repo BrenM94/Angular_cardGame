@@ -1,0 +1,14 @@
+<div class="details-container" [ngClass]="{'details-container--show': card}">
+  <h2 class="details-container__headline">
+    {{title}}
+  </h2>
+  <div class="details-container__real-name">
+    {{card?.realName}}
+  </div>
+  <div class="details-container__player-name">
+    {{card?.playerName}}
+  </div>
+  <div class="details-container__asset">
+    {{card?.asset}}
+  </div>
+</div>

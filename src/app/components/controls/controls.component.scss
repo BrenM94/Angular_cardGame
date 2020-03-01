@@ -1,0 +1,24 @@
+.controls-container {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #000;
+
+  &__headline {
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    height: 40px;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+
+    &--no-margin {
+      margin: 0;
+    }
+
+    &--full-width {
+      width: 100%;
+    }
+  }
+}
